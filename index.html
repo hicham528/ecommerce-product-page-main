@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/icon-menu.svg" alt="" class="open_navbare">
+        <img src="images/logo.svg" alt="" />
+        <ul class="navbare">
+          <img src="images/icon-close.svg" alt="" class="close_nav">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="shoop_nav">
+        <img src="images/icon-cart.svg" alt="" class="shooping_nav"/>
+        <span class="quantity"></span>
+        <img src="images/image-avatar.png" alt="" class="avatar" />
+      </div>
+    </header>
+    <section>
+      <div class="image_container">
+        <img src="images/image-product-1.jpg" alt="" class="parent_img" />
+        <div class="img_content">
+          <img
+            class="select_img"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+            data-src="images/image-product-1.jpg"
+          />
+          <img
+            class="select_img"
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+            data-src="images/image-product-2.jpg"
+          />
+          <img
+            class="select_img"
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+            data-src="images/image-product-3.jpg"
+          />
+          <img
+            class="select_img"
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+            data-src="images/image-product-4.jpg"
+          />
+        </div>
+      </div>
+      <div class="text_container">
+        <h5>Sneaker Company</h5>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <h3 class="price">$125.00<span>50%</span></h3>
+        <p>$250.00</p>
+        <div class="btn_content">
+          <div class="quantity_btn">
+            <img src="images/icon-minus.svg" alt="" class="minus_btn" />
+            <span class="quantity_product">0</span>
+            <img src="images/icon-plus.svg" alt="" class="plus_btn" />
+          </div>
+          <button class="add_to_cart"><img src="images/icon-cart.svg" alt="" />add to cart</button>
+        </div>
+      </div>
+    </section>
+    <div class="looking_product_container">
+      <div class="close_container">
+        <i class="fa-solid fa-xmark" id="close_btn"></i>
+      </div>
+      <div class="show_product_container">
+        <img src="images/icon-previous.svg" alt="" class="prev_btn" />
+        <img src="images/image-product-1.jpg" alt="" class="selected_img_result"/>
+        <img src="images/icon-next.svg" alt="" class="next_btn" />
+      </div>
+      <div class="img_content">
+        <img
+          class="select_img"
+          src="images/image-product-1-thumbnail.jpg"
+          alt=""
+          data-src="images/image-product-1.jpg"
+        />
+        <img
+          class="select_img"
+          src="images/image-product-2-thumbnail.jpg"
+          alt=""
+          data-src="images/image-product-2.jpg"
+        />
+        <img
+          class="select_img"
+          src="images/image-product-3-thumbnail.jpg"
+          alt=""
+          data-src="images/image-product-3.jpg"
+        />
+        <img
+          class="select_img"
+          src="images/image-product-4-thumbnail.jpg"
+          alt=""
+          data-src="images/image-product-4.jpg"
+        />
+      </div>
+    </div>
+    <div class="shoop_result_container">
+      <h1 class="teittle">cart</h1>
+      <div class="result_shooping">
+   <p>your cart is empty</p>
+      
+      </div>
+      <button>checkout</button>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">hicham drakech</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
